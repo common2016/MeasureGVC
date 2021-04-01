@@ -3,7 +3,10 @@ library(matlab)
 library(decompr)
 library(reshape2)
 library(tidyverse)
+# library(MeasureGVC)
 devtools::load_all()
+
+# from WIOD website: http://www.wiod.org/database/wiots16
 load('data-raw/wiot_r_Nov16/WIOT2014_October16_ROW.RData')
 
 # contries, industries, inter
@@ -33,3 +36,11 @@ wwz <- load_tables_vectors(z, y, cnts, indus, out)
 dw <- partici_idx(wwz,'forward')
 up <- partici_idx(wwz,'backward')
 
+filter(dw, (cnts %in% c('CHN','DEU','IND','JPN','RUS','USA')) &
+         (industry %in% c("Manufacture of coke and refined petroleum products ")))
+filter(dw, (cnts %in% c('CHN','DEU','IND','JPN','RUS','USA')) &
+         (industry %in% c("Manufacture of machinery and equipment n.e.c.")))
+filter(up, (cnts %in% c('CHN','DEU','IND','JPN','RUS','USA')) &
+         (industry %in% c("Manufacture of coke and refined petroleum products ")))
+filter(up, (cnts %in% c('CHN','DEU','IND','JPN','RUS','USA')) &
+         (industry %in% c("Manufacture of machinery and equipment n.e.c.")))

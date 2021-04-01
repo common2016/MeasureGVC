@@ -9,18 +9,34 @@ partici_idx(wwz, linkage = "forward")
 \arguments{
 \item{wwz}{a decompr class object from the \code{decompr} package.}
 
-\item{linkage}{calculating selecting, \code{forward} or \code{backward}. Wang et al. (2017) puts forward
-algorithms of GVC participation index for forward and backward linkage.}
+\item{linkage}{calculating method, \code{forward} or \code{backward}. Wang et al. (2017) puts forward
+algorithms of GVC participation index for forward and backward linkage. I
+generate another method named \code{inner}.}
+}
+\value{
+a data.frame including countries, industires, GVC participation index
+\enumerate{
+\item cnts: contries
+\item industry
+\item up: GVC participation index for forward linkage
+\item dw: GVC participation index for backward linkage
+\item up_inner: inner circle measure for forward linkage
+\item dw_inner: inner circle measure for backward linkage
+}
 }
 \description{
 Compute Participation Index for Forward and Backward Linkage
 }
+\details{
+A higher degree of forward participation than backward
+participation implies that the country/sector is more actively engaged
+in upstream production activities in GVCs.
+}
 \examples{
 # load example data
-library(decompr)
-data(leather)
+data(leather, package = 'decompr')
 # create intermediate object (class decompr)
-decompr_object <- load_tables_vectors(inter,
+decompr_object <- decompr::load_tables_vectors(inter,
                                      final,
                                      countries,
                                      industries,
