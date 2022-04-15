@@ -11,7 +11,7 @@ partici_idx(wwz, linkage = "forward")
 
 \item{linkage}{calculating method, \code{forward} or \code{backward}. Wang et al. (2017) puts forward
 algorithms of GVC participation index for forward and backward linkage. I
-generate another method named \code{inner}.}
+show a another method named \code{inner}.}
 }
 \value{
 a data.frame including countries, industires, GVC participation index
@@ -36,13 +36,13 @@ in upstream production activities in GVCs.
 # load example data
 data(leather, package = 'decompr')
 # create intermediate object (class decompr)
-decompr_object <- decompr::load_tables_vectors(inter,
-                                     final,
-                                     countries,
-                                     industries,
-                                     out)
+decompr_object <- decompr::load_tables_vectors(leather)
 partici_idx(decompr_object, 'forward')
+
 }
 \references{
-Wang, Z., et al., MEASURES OF PARTICIPATION IN GLOBAL VALUE CHAINS AND GLOBAL BUSINESS CYCLES. 2017, NBER.
+Pu Chen and Yuanhai Fu, Measurement and Application of Economic
+Inner Cycle From the Perspective of Global Value Chain (In Chinese). 2022, Statistical Research.
+
+Wang, Z., Shang-Jin Wei, Xinding Yu, Kunfu Zhu, Measures of Participation in Glabal Value Chains and Global Business Cycles. 2017, NBER. Number:23222.
 }

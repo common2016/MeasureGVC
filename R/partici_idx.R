@@ -4,7 +4,7 @@
 #' @param wwz a decompr class object from the \code{decompr} package.
 #' @param linkage calculating method, \code{forward} or \code{backward}. Wang et al. (2017) puts forward
 #'  algorithms of GVC participation index for forward and backward linkage. I
-#'  generate another method named \code{inner}.
+#'  show a another method named \code{inner}.
 #' @details A higher degree of forward participation than backward
 #'  participation implies that the country/sector is more actively engaged
 #'  in upstream production activities in GVCs.
@@ -18,19 +18,18 @@
 #' \item dw_inner: inner circle measure for backward linkage
 #' }
 #'
-#' @references Wang, Z., et al., MEASURES OF PARTICIPATION IN GLOBAL VALUE CHAINS AND GLOBAL BUSINESS CYCLES. 2017, NBER.
+#' @references Pu Chen and Yuanhai Fu, Measurement and Application of Economic
+#' Inner Cycle From the Perspective of Global Value Chain (In Chinese). 2022, Statistical Research.
+#' @references Wang, Z., Shang-Jin Wei, Xinding Yu, Kunfu Zhu, Measures of Participation in Glabal Value Chains and Global Business Cycles. 2017, NBER. Number:23222.
 #'
 #'
 #' @examples
 #' # load example data
 #' data(leather, package = 'decompr')
 #' # create intermediate object (class decompr)
-#' decompr_object <- decompr::load_tables_vectors(inter,
-#'                                      final,
-#'                                      countries,
-#'                                      industries,
-#'                                      out)
+#' decompr_object <- decompr::load_tables_vectors(leather)
 #' partici_idx(decompr_object, 'forward')
+#'
 #' @export
 
 
