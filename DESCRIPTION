@@ -1,13 +1,13 @@
 Package: MeasureGVC
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Compute Participation Index for Forward and Backward Linkage, and Inner Circle
+Version: 0.0.1
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Pu",
+           family = "Chen",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           email = "shengnehs@qq.com",
+           comment = c(ORCID = "0000-0001-7594-6827"))
+Description: Compute Participation Index for Forward and Backward Linkage, and inner circle based on Wang et al. (2017) <DOI:10.3386/w23222> and Chen and Fu (2022).
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

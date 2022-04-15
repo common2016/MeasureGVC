@@ -64,9 +64,6 @@ partici_idx(decompr_object, 'backward')
 #> 9   Germany Transport_Equipment 0.3664037
 ```
 
-## 3. 参考文献
-
--   
--   Wang, Z., Shang-Jin Wei, Xinding Yu, Kunfu Zhu, Measures of
-    Participation in Glabal Value Chains and Global Business Cycles.
-    2017, NBER. Number:23222.
+<!-- ## 3. 参考文献 -->
+<!-- - 陈普和傅元海，全球价值链视角下经济内循环测度与应用. 统计研究（已接受）. 2022. -->
+<!-- - Wang, Z., Shang-Jin Wei, Xinding Yu, Kunfu Zhu, Measures of Participation in Glabal Value Chains and Global Business Cycles. 2017, NBER. Number:23222. -->
