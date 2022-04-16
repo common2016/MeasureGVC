@@ -11,7 +11,7 @@ devtools::install_github('common2016/MeasureGVC')
 
 ## 2. 使用
 
--   内循环计算，
+-   内循环计算：`up_inner`为前向链接内循环，`dw_inner`为后向链接内循环。
 
 ``` r
 library(MeasureGVC)
@@ -32,7 +32,7 @@ partici_idx(decompr_object, 'inner')
 #> 9   Germany Transport_Equipment 0.4765277 0.3367365
 ```
 
--   下游行业GVC参与度计算（前向链接），
+-   GVC前向链接参与指数。若前向链接参与指数相对后向链接参与指数更高，意味着该行业更多参与了上游产品制造。
 
 ``` r
 partici_idx(decompr_object, 'forward')
@@ -48,7 +48,7 @@ partici_idx(decompr_object, 'forward')
 #> 9   Germany Transport_Equipment 0.1236333
 ```
 
--   上游行业GVC参与度计算（后向链接）,
+-   GVC后向链接参与指数。
 
 ``` r
 partici_idx(decompr_object, 'backward')
