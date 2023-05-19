@@ -11,7 +11,7 @@ devtools::install_github('common2016/MeasureGVC')
 
 ## 2. 使用
 
--   内循环计算：`up_inner`为前向链接内循环，`dw_inner`为后向链接内循环。
+- 内循环计算：`up_inner`为前向链接内循环，`dw_inner`为后向链接内循环。
 
 ``` r
 library(MeasureGVC)
@@ -32,7 +32,7 @@ partici_idx(decompr_object, 'inner')
 #> 9   Germany Transport_Equipment 0.4765277 0.3367365
 ```
 
--   GVC前向链接参与指数。若前向链接参与指数相对后向链接参与指数更高，意味着该行业更多参与了上游产品制造。
+- GVC前向链接参与指数。若前向链接参与指数相对后向链接参与指数更高，意味着该行业更多参与了上游产品制造。
 
 ``` r
 partici_idx(decompr_object, 'forward')
@@ -48,7 +48,7 @@ partici_idx(decompr_object, 'forward')
 #> 9   Germany Transport_Equipment 0.1236333
 ```
 
--   GVC后向链接参与指数。
+- GVC后向链接参与指数。
 
 ``` r
 partici_idx(decompr_object, 'backward')
@@ -64,6 +64,8 @@ partici_idx(decompr_object, 'backward')
 #> 9   Germany Transport_Equipment 0.3664037
 ```
 
-<!-- ## 3. 参考文献 -->
-<!-- - 陈普和傅元海，全球价值链视角下经济内循环测度与应用. 统计研究（已接受）. 2022. -->
+## 3. 参考文献
+
+陈普和傅元海，全球价值链视角下经济内循环测度与应用. 统计研究. 2022,
+39(11): 19-31.
 <!-- - Wang, Z., Shang-Jin Wei, Xinding Yu, Kunfu Zhu, Measures of Participation in Glabal Value Chains and Global Business Cycles. 2017, NBER. Number:23222. -->
